@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./百度网盘.css">
+</head>
+
+<body>
+    <!-- 主体 -->
+    <div class="main">
+        <!-- 首页背景,轮播图 -->
+        <!-- ps:鼠标移动背景跟随,需要矩阵... 暂时不做 -->
+        <div id="bg" class="banner bg1"></div>
+        <div id="dots">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        <!-- 导航栏 -->
+        <div class="nav_bg">
+            <div class="nav">
+
+                <a href="" class="logo"></a>
+
+                <ul class="nav_header">
+                    <li><a href="">严打违规文件公告及非法有害信息举报</a></li>
+                    <li><a href="">百度首页</a></li>
+                    <li><a href="">客户端下载</a></li>
+                    <li><a href="">官方微博</a></li>
+                    <li><a href="">问题反馈</a></li>
+                    <li><a href="">扫码传文件</a></li>
+                    <li><a href="">内容商城</a></li>
+                    <li><a href="">开放平台</a></li>
+                    <li><a href="">会员中心</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 登录 -->
+        <div class="login_bg">
+            <div class="login">
+                <h3>扫一扫登录</h3>
+                <p>请使用 <a href="">百度网盘App</a> 扫码登录</p>
+                <div class="login_img">
+                    <div class="code"></div>
+                    <div class="tips"></div>
+                </div>
+                <p>百度网盘App - 我的页面左上角 - 扫一扫登录</p>
+                <div class="login_bottom">
+                    <div><a>帐号密码登录</a></div>
+                    <div class="login_icon">
+                        <i class="wb"></i>
+                        <i class="qq"></i>
+                        <i class="wx"></i>
+                    </div>
+                    <div><a href="">立即注册</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <ul class="download">
+            <li><a href="" class="Window"></a></li>
+            <li><a href="" class="Android"></a></li>
+            <li><a href="" class="iPhone"></a></li>
+            <li><a href="" class="iPad"></a></li>
+            <li><a href="" class="MAC"></a></li>
+        </ul>
+        <p>
+            &copy; 2020 Baidu商务合作
+            <a href=""></a> |
+            <a href="">移动开放平台</a> |
+            <a href="">服务协议</a> |
+            <a href="">权利声明</a> |
+            <a href="">版本更新</a> |
+            <a href="">帮助中心</a> |
+            <a href="">版权投诉</a> |
+            <a href="">百度营销</a> |
+            <a href="">帐号认证</a>
+        </p>
+    </div>
+
+
+    <script>
+        var mainBg = document.getElementById('bg');
+        var dot = dots.getElementsByTagName('i');
+
+        dot[0].style.background = "#fff" //初始化圆点背景
+        mainBg.style.transition = "all 1.5s";
+
+        var i = 1;
+        function rep() {
+            var oldClass = "bg" + i;                //拼接banner的当前背景class
+            i = i == dot.length ? i == 0 : i;       //判断i是否达到最大值
+            var newClass = "bg" + (++i);            //拼接banner的下一个背景class
+
+            mainBg.classList.replace(oldClass, newClass);           //替换背景
+
+            for (let x = 0; x < dot.length; x++) {
+                dot[x].style.background = "";           //重置圆点背景
+            }
+            dot[i - 1].style.background = "#ffffff"     //设置当前圆点背景
+        }
+        setInterval(rep, 3000);
+
+
+        
+    </script>
+</body>
+
+</html>

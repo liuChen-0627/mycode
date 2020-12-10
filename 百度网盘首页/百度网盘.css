@@ -1,0 +1,271 @@
+/* 公共样式 */
+body,
+ul,
+li {
+    margin : 0;
+    padding: 0;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 主体 */
+.main {
+    position: relative;
+    width   : 100%;
+    height  : 550px;
+    overflow: hidden;
+}
+/* 背景轮播图 */
+.main .banner {
+    position       : absolute;
+    width          : 100%;
+    height         : 100%;
+    left           : 0;
+    background-size: cover;
+}
+.main .banner:hover{
+    transform: scale(1.02);
+}
+
+.bg1 {
+    background: url(./images/bg1.jpg) no-repeat;
+}
+
+.bg2 {
+    background: url(./images/bg2.jpg) no-repeat;
+}
+
+.bg3 {
+    background: url(./images/bg3.jpg) no-repeat;
+}
+
+.bg4 {
+    background: url(./images/bg4.jpg) no-repeat;
+}
+
+
+#dots {
+    position : absolute;
+    bottom   : 20px;
+    left     : 50%;
+    transform: translateX(-50%);
+}
+
+#dots i {
+    margin       : 0 7px;
+    float        : left;
+    width        : 10px;
+    height       : 10px;
+    border-radius: 50%;
+    background   : #a5a2a2;
+}
+
+/* 导航栏 */
+.nav {
+    position: absolute;
+    height  : 70px;
+    width   : 1380px;
+    margin  : 0 auto;
+}
+
+.logo {
+    background: url('./images/logo.png') no-repeat scroll 0 transparent;
+    float     : left;
+    height    : 33px;
+    margin    : 13px 0 0 25px;
+    overflow  : hidden;
+    width     : 157px;
+}
+
+.nav_header {
+    float: right;
+}
+
+.nav_header li {
+
+    float      : left;
+    margin     : 0 10px;
+    line-height: 70px;
+}
+
+.nav_header li a {
+    color    : #fff;
+    font-size: 14px;
+}
+
+.nav_header li a:hover {
+    text-decoration: underline;
+}
+
+.nav_header li:first-child a {
+    color: red;
+}
+
+.nav_header li:last-child a {
+    background-color: #efcd8b;
+    color           : #333;
+    border-radius   : 18px;
+    padding         : 4px 10px;
+}
+
+.nav_header li:last-child a:hover {
+    background-color: #e7c062;
+    text-decoration : none;
+}
+
+/* 登录 */
+.login_bg {
+    position: relative;
+    margin  : 0 auto;
+    width   : 1200px;
+}
+
+.login {
+    position        : absolute;
+    width           : 353px;
+    height          : 421px;
+    border-radius   : 4px;
+    background-color: #fff;
+    right           : 20px;
+    top             : 70px;
+    overflow        : hidden;
+    text-align      : center;
+    color           : #333;
+    font-size       : 14px;
+}
+
+.login a {
+    color: #14aeff;
+}
+
+.login a:hover,
+.login i:hover,
+.fotter li:hover {
+    opacity: .5;
+    cursor : pointer;
+}
+
+.login p:last-of-type {
+    color    : #999999;
+    font-size: 12px;
+}
+
+.login h3 {
+    margin-top: 40px;
+}
+
+.login_img {
+    width   : 324px;
+    margin  : 30px auto 23px;
+    overflow: hidden;
+}
+
+.login_img div {
+    margin          : 0 3px;
+    float           : left;
+    width           : 155px;
+    height          : 155px;
+    background-color: #999999;
+}
+
+.login_img .code {
+    background: url(./images/login.png) no-repeat;
+}
+
+.login_img .tips {
+    background     : url(./images/baidu-new.png) no-repeat;
+    background-size: contain;
+}
+
+.login_bottom {
+    position        : absolute;
+    right           : 0;
+    bottom          : 0;
+    left            : 0;
+    height          : 65px;
+    background-color: #f3f8ff;
+}
+
+.login_bottom div {
+    margin: 23px 13px;
+    float : left;
+}
+
+.login_icon i {
+    float : left;
+    width : 25px;
+    height: 21px;
+    margin: 0 10px;
+}
+
+.login_icon .wb {
+    background: url(./images/logo_sinaweibo.png) no-repeat;
+}
+
+.login_icon .qq {
+    background: url(./images/logo_qq.png) no-repeat;
+}
+
+.login_icon .wx {
+    background: url(./images/wechat.png) no-repeat;
+}
+
+
+/* 底部 */
+.download {
+    margin    : 0 auto;
+    margin-top: 30px;
+    width     : 755px;
+    height    : 110px;
+    overflow  : hidden;
+}
+
+.download li {
+    float  : left;
+    width  : 150px;
+    display: block;
+}
+
+.download li a {
+    display   : block;
+    width     : 90px;
+    height    : 70px;
+    margin    : 0 auto;
+    background: url(./images/login.png) no-repeat;
+}
+
+.download .Window {
+    background-position: -500px -70px;
+}
+
+.download .Android {
+    background-position: -316px -1px;
+}
+
+.download .iPhone {
+    background-position: -310px -70px;
+}
+
+.download .iPad {
+    background-position: -500px 0;
+}
+
+.download .MAC {
+    background-position: -180px -160px;
+}
+
+.footer p,
+.footer p a {
+    text-align: center;
+    font-size : 12px;
+    color     : #888;
+
+}

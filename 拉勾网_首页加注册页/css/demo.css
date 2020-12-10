@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ol, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    display: block;
+}
+
+input {
+    border: none;
+}
+
+/* 公共样式 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearFixed:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color: #00b38a;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color: white;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header {
+    height: 360px;
+    background-color: #00b38a;
+}
+
+.boxCon {
+    width: 700px;
+    height: 490px;
+    position: absolute;
+    top: 77px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.boxCon .logo {
+    height: 77px;
+    background: url("../img2/logo.png") no-repeat;
+}
+
+.boxCon .forBox {
+    height: 399px;
+    padding: 6px;
+    border: 1px solid #dce1e6;
+    background-color: #fff;
+}
+
+.boxCon .forBox .imgBox img {
+    margin-right: 6px;
+}
+
+.boxCon .forBox .imgBox img:nth-child(2) {
+    margin-top: -5px;
+}
+
+.boxCon .forBox .inpLeft {
+    width: 290px;
+    height: 277px;
+    border-right: 1px dashed #555555;
+    padding: 0 63px;
+    position: relative;
+}
+
+.boxCon .forBox .inpLeft .line1 {
+    font-size: 18px;
+    height: 40px;
+    border-bottom: 1px solid #e5e8ec;
+    color: #555555;
+    line-height: 40px;
+}
+
+.boxCon .forBox .inpLeft .line1 p {
+    width: 145px;
+    text-align: center;
+    position: relative;
+}
+
+.boxCon .forBox .inpLeft .line1 p:nth-child(1) {
+    color: #00b38a;
+    border-bottom: 1px solid #00b38a;
+}
+
+.boxCon .forBox .inpLeft .lineInp {
+    height: 64px;
+    border-bottom: 1px solid #e5e8ec;
+}
+
+.boxCon .forBox .inpLeft .lineInp input {
+    height: 44px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.boxCon .forBox .inpLeft .txt {
+    color: #00b38a;
+    height: 58px;
+    line-height: 58px;
+    text-align: right;
+}
+
+.boxCon .forBox .inpLeft input[type="submit"] {
+    height: 48px;
+    background-color: #00b38a;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.boxCon .forBox .inpLeft .or {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    right: -8px;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555555;
+}
+
+.boxCon .forBox .inpRight {
+    padding: 80px 0 0 52px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.boxCon .forBox .inpRight p:nth-of-type(2) {
+    font-size: 16px;
+    color: #00b38a;
+    height: 30px;
+    line-height: 30px;
+}
+
+.boxCon .forBox .inpRight p:nth-of-type(2) img {
+    display: inline-block;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.boxCon .forBox .inpRight .txtBox {
+    margin-top: 44px;
+}
+
+.boxCon .forBox .inpRight .txtBox a {
+    float: left;
+    margin: 10px 24px 0 0;
+}
+
+/* .spa {
+    position: relative;
+    display: block;
+    width: 200px;
+    border-bottom: 1px red solid;
+}
+
+.spa span:nth-child(1) {
+    position: absolute;
+    border: 20px solid transparent;
+    border-bottom-color: blue;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.spa span:nth-child(2) {
+    position: absolute;
+    border: 20px solid transparent;
+    border-bottom-color: green;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+} */

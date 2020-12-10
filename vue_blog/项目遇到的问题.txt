@@ -1,0 +1,2 @@
+router-link 标签 to到达的节点 内容只能在“”里面，无法使用string拼接blog.id
+在to前面通过v-bing绑定即可
